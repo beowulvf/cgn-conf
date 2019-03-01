@@ -115,12 +115,22 @@
         <!--Header End-->
 		
 		<!-- Slider Area Start -->
-        <div id="rs-slider" class="rs-slider-banner rs-slider-banner2">     
+        <style>
+            #cgnVideo {
+                right: 0;
+                bottom: 0;
+                width: 100%; 
+                height: 100%;
+            }
+        </style>
+        <div style="background-color:#1f1816;" id="rs-slider" class="rs-slider-banner rs-slider-banner2">     
         	<div id="home-banner">
 				<!-- Item 1 -->
 				<div class="item active">
-					<img src="images/banner/cgnBg.jpg" alt="" />
-					
+					<!--img src="images/banner/cgnBg.jpg" alt="" /-->
+                    <video autoplay muted loop inline id="cgnVideo">
+                        <source src="commissioned-bg.mp4" type="video/mp4">
+                    </video>
 				</div>
         	</div><!-- #home-banner -->         
         </div>
