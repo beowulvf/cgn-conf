@@ -51,6 +51,12 @@
             <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script> 
+            $(function(){
+                $("#includeMenu").load("menu.html"); 
+            });
+        </script>
     </head>
     <body>
         <!--Preloader area start here-->
@@ -62,60 +68,13 @@
         <!--Header Start-->
         <header id="rs-header" class="rs-header fullwidth-header">
             <!-- Menu Start -->
-            <div class="menu-area menu-sticky">
-                <div class="container">
-                    <div class="main-menu">
-                        <div class="row">
-                            <div class="col-lg-2">
-                                <div class="logo-area">
-                                    <a href="index.html"><img src="images/cgnLogo.png" alt="CalvaryChapel.com | CGN"></a>
-                                </div>
-                            </div>
-                            <div class="col-lg-10">
-                                <!-- <div id="logo-sticky" class="text-center">
-                                    <a href="index.html"><img src="images/logo.png" alt="logo"></a>
-                                </div> -->
-                                <a class="rs-menu-toggle"><i class="fa fa-bars"></i>Menu</a>
-                                <nav class="rs-menu">
-                                    <ul class="nav-menu">
-                                        <!-- Home -->
-                                        <li> <a href="index.html" class="home">Home</a>
-                                        </li>
-                                        <!-- End Home --> 
-                                        
-                                        <li> <a href="/index.html#speakers">Speakers</a>
-                                        </li>
-                                        
-                                        <li> <a href="/index.html#registration">Registration</a>
-                                        </li>
-                                        
-                                        <!--li> <a href="/index.html#airports">Airports</a>
-                                        </li-->
-                                        
-                                        <li> <a href="venues.html">Lodging</a>
-                                        </li>
-                                        
-                                        <li> <a href="faq.html">FAQ</a>
-                                        </li>
-                                        
-                                        <li> <a href="https://cccm.wufoo.com/forms/ministryvendor-display-table-request-form/">Vendor Form</a>
-                                        </li>
-                                        
-                                        <li> <a href="https://calvarychapel.com/posts/2019-cgn-senior-pastors-wives-retreat" target="_blank">Wives</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                                <div class="buy-tickets">
-                                    <a href="https://calvarychapelcostamesa1.regfox.com/2019-pastors-conference" target="_blank" class="primary-btn" data-animation-in="lightSpeedIn" data-animation-out="animate-out">Register</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- .container -->
+            <div id="includeMenu" class="menu-area menu-sticky">
+                
             </div>
             <!-- Menu End -->
         </header>
-        <!--Header End-->		
+        <!--Header End-->
+        
         <!-- Breadcrumbs Start -->
 		<div class="rs-breadcrumbs">
             <img src="images/banner/speakerBG.jpg" alt="" />
