@@ -1,192 +1,161 @@
-<!DOCTYPE html> 
-<html lang="en-us"> 
-<head> 
-<!-- meta tag --> 
-<meta charset="utf-8"> 
-<title>CGN | Lodging</title> 
-<meta name="description" content=""> 
-<!-- responsive tag --> 
-<meta http-equiv="x-ua-compatible" content="ie=edge"> 
-<meta name="viewport" content="width=device-width, initial-scale=1"> 
-<!-- favicon --> 
-<link rel="shortcut icon" href="/assets/favicon/favicon-16.png" type="image/x-icon"/> 
-<link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/favicon-57.png"> 
-<link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/favicon-60.png"> 
-<link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/favicon-72.png"> 
-<link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/favicon-76.png"> 
-<link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/favicon-114.png"> 
-<link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/favicon-120.png"> 
-<link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/favicon-144.png"> 
-<link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/favicon-152.png"> 
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/favicon-180.png"> 
-<link rel="icon" type="image/png" href="/assets/favicon/favicon-16.png" sizes="16x16"> 
-<link rel="icon" type="image/png" href="/assets/favicon/favicon-32.png" sizes="32x32"> 
-<link rel="icon" type="image/png" href="/assets/favicon/favicon-96.png" sizes="96x96"> 
-<link rel="icon" type="image/png" href="/assets/favicon/favicon-96.png" sizes="192x192"> 
-<!-- bootstrap v4 css --> 
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> 
-<!-- font-awesome css --> 
-<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"> 
-<!-- animate css --> 
-<link rel="stylesheet" type="text/css" href="css/animate.css"> 
-<!-- owl.carousel css --> 
-<link rel="stylesheet" type="text/css" href="css/owl.carousel.css"> 
-<!-- slick css --> 
-<link rel="stylesheet" type="text/css" href="css/slick.css"> 
-<!-- magnific popup css --> 
-<link rel="stylesheet" type="text/css" href="css/magnific-popup.css"> 
-<!-- icofont css --> 
-<link rel="stylesheet" type="text/css" href="css/icofont.css"> 
-<!-- flaticon css --> 
-<link rel="stylesheet" type="text/css" href="fonts/flaticon.css"> 
-<!-- rsmenu CSS --> 
-<link rel="stylesheet" type="text/css" href="css/rsmenu-main.css"> 
-<!-- rsmenu transitions CSS --> 
-<link rel="stylesheet" type="text/css" href="css/rsmenu-transitions.css"> 
-<!-- style css --> 
-<link rel="stylesheet" type="text/css" href="style.css"> 
-<!-- responsive css --> 
-<link rel="stylesheet" type="text/css" href="css/responsive.css"> 
-<!--[if lt IE 9]> 
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <!-- meta tag -->
+    <meta charset="utf-8">
+    <title>CGN | Lodging</title>
+    <meta name="description" content="">
+    <!-- responsive tag -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/assets/favicon/favicon-16.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/favicon-57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/favicon-60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/favicon-72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/favicon-76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/favicon-114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/favicon-120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/favicon-144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/favicon-152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/favicon-180.png">
+    <link rel="icon" type="image/png" href="/assets/favicon/favicon-16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/assets/favicon/favicon-32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/assets/favicon/favicon-96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/assets/favicon/favicon-96.png" sizes="192x192">
+    <!-- bootstrap v4 css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- font-awesome css -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <!-- animate css -->
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <!-- owl.carousel css -->
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <!-- slick css -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <!-- magnific popup css -->
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+    <!-- icofont css -->
+    <link rel="stylesheet" type="text/css" href="css/icofont.css">
+    <!-- flaticon css -->
+    <link rel="stylesheet" type="text/css" href="fonts/flaticon.css">
+    <!-- rsmenu CSS -->
+    <link rel="stylesheet" type="text/css" href="css/rsmenu-main.css">
+    <!-- rsmenu transitions CSS -->
+    <link rel="stylesheet" type="text/css" href="css/rsmenu-transitions.css">
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- responsive css -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <!--[if lt IE 9]> 
 <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> 
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> 
-<![endif]--> 
-</head> 
-<body> 
-<!--Preloader area start here--> 
-<!--<div class="loadding-page"> 
+<![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script> 
+        $(function(){
+            $("#includeMenu").load("menu.html"); 
+        });
+    </script>
+</head>
+
+<body>
+    <!--Preloader area start here-->
+    <!--<div class="loadding-page"> 
 <div class="cssload-box-loading"></div> 
-</div>--> 
-<!--Preloader area end here--> 
+</div>-->
+    <!--Preloader area end here-->
 
-<!--Header Start--> 
-<header id="rs-header" class="rs-header fullwidth-header"> 
-<!-- Menu Start --> 
-<div class="menu-area menu-sticky"> 
-<div class="container"> 
-<div class="main-menu"> 
-<div class="row"> 
-<div class="col-lg-2"> 
-<div class="logo-area"> 
-<a href="index.html"><img src="images/cgnLogo.png" alt="CalvaryChapel.com | CGN"></a> 
-</div> 
-</div> 
-<div class="col-lg-10"> 
-<!-- <div id="logo-sticky" class="text-center">
-<a href="index.html"><img src="images/logo.png" alt="logo"></a> 
-</div> --> 
-<a class="rs-menu-toggle"><i class="fa fa-bars"></i>Menu</a> 
-<nav class="rs-menu"> 
-<ul class="nav-menu"> 
-<!-- Home --> 
-<li> <a href="index.html" class="home">Home</a> 
-</li> 
-<!-- End Home --> 
+    <!--Header Start-->
+        <header id="rs-header" class="rs-header fullwidth-header">
+            <!-- Menu Start -->
+            <div id="includeMenu" class="menu-area menu-sticky">
+                
+            </div>
+            <!-- Menu End -->
+        </header>
+        <!--Header End-->
 
-<li> <a href="/index.html#speakers">Speakers</a> 
-</li> 
+    <!-- Breadcrumbs Start -->
+    <div class="rs-breadcrumbs">
+        <img src="images/banner/attractionsBg.jpg" alt="" />
+    </div>
+    <!-- Breadcrumbs End -->
 
-<li> <a href="/index.html#registration">Registration</a>
-</li> 
+    <!-- Venues Section Start -->
 
-<li> <a href="/index.html#airports">Airports</a> 
-</li> 
+    <!-- Body Section -->
+    <!-- Our Event Sponsors Start -->
+    <div class="our-event-sponsors2 sponsors-border-style pt-100 pb-100">
+        <div class="container">
+            <div class="sec-title3 text-center">
+                <span>Restaurants</span>
+                <h2>Local Places to Dine</h2>
+            </div>
+            <div class="sponsor-tabs-content">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3><strong>MEXICAN</strong></h3>
+                        <p>Rubios<br />Baja Fish<br />Chipotle<br />Cafe Rio<br />Calientes<br />Taco Mesa<br />Bear Flag Fish Tacos</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3><strong>ASIAN / MIDDLE EASTERN</strong></h3>
+                        <p>Full Moon<br />Uroko Cafe (Poke)<br />Flame Broiler<br />Pick Up Stix<br />Halal Guys<br />Tandoori Indian Cuisine<br />Din Tai Fung (Dumplings)<br />Hakata Ikkousha (Ramen)</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3><strong>SANDWICH / SOUP / SALAD</strong></h3>
+                        <p>Green Leaf<br />Souplantation<br />Corner Bakery<br />Panera<br />Boudin<br />La Petit Sourie<br />Ruscello<br />Bruegger's Bagels<br />Subway</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3><strong>ITALIAN</strong></h3>
+                        <p>Ecco Cafe<br />Pitfire Pizza<br />Maggianos<br />Bella Cucina<br />Pizza D'oro<br />Pizza Press</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3><strong>AMERICAN</strong></h3>
+                        <p>Red Robin<br />Habit<br />Burger Lounge<br />In-n-out<br />Chick Fil-A<br />Five Guys<br />Raising Canes<br />Ruby's<br />Wing Stop<br />Philly's Best</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3><strong>VEGAN</strong></h3>
+                        <p>Native Foods Cafe<br />Seabirds Kitchen<br />HiroNori Craft Ramen</p>
+                    </div>
+                </div>
+            </div>
 
-<li> <a href="venues.html">Lodging</a> 
-</li> 
+        </div>
+    </div>
+    <!-- Our Event Sponsors End -->
 
-<li> <a href="faq.html">FAQ</a> 
-</li> 
+    <!-- Our Event Sponsors Start -->
+    <div class="our-event-sponsors2 sponsors-border-style gray-color pt-100 pb-100">
+        <div class="container">
+            <div class="sec-title3 text-center">
+                <span>Attractions</span>
+                <h2>Places to Have Fun</h2>
+            </div>
+            <div class="sponsor-tabs-content">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3><strong>THEME PARKS</strong></h3>
+                        <p>Disneyland<br />Knott's Berry Farm<br />Adventure City</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3><strong>SHOPPING</strong></h3>
+                        <p>South Coast Plaza<br />Fashion Island<br />The Outlets in Orange<br />Irvine Spectrum</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3><strong>BEACHES</strong></h3>
+                        <p>Newport Beach<br />Huntington Beach Pier<br />Laguna Beach<br />Crystal Cove State Beach<br />Corona del Mar State Beach</p>
+                    </div>
+                </div>
+            </div>
 
-<li> <a href="https://cccm.wufoo.com/forms/ministryvendor-display-table-request-form/">Vendor Form</a> 
-</li> 
+        </div>
+    </div>
+    <!-- Our Event Sponsors End -->
 
-<li> <a href="https://calvarychapel.com/posts/2019-cgn-senior-pastors-wives-retreat" >Wives</a> 
-</li> 
-</ul> 
-</nav> 
-<div class="buy-tickets"> 
-<a href="https://calvarychapelcostamesa1.regfox.com/2019-pastors-conference" class="primary-btn" data-animation-in="lightSpeedIn" data-animation-out="animate-out">Register</a> 
-</div> 
-</div> 
-</div> 
-</div> 
-</div><!-- .container --> 
-</div> 
-<!-- Menu End --> 
-</header> 
-<!--Header End--> 
-
-<!-- Breadcrumbs Start --> 
-<div class="rs-breadcrumbs"> 
-<img src="images/banner/attractionsBg.jpg" alt="" /> 
-</div> 
-<!-- Breadcrumbs End --> 
-
-<!-- Venues Section Start --> 
-
-<!-- Body Section --> 
-<!-- Our Event Sponsors Start --> 
-<div class="our-event-sponsors2 sponsors-border-style pt-100 pb-100"> 
-<div class="container"> 
-<div class="sec-title3 text-center"> 
-<span>Restaurants</span> 
-<h2>Local Places to Dine</h2> 
-</div> 
-<div class="sponsor-tabs-content"> 
-<div class="row"> 
-<div class="col-md-4"> 
-<h3><strong>MEXICAN</strong></h3><p>Rubios<br/>Baja Fish<br/>Chipotle<br/>Cafe Rio<br/>Calientes<br/>Taco Mesa<br/>Bear Flag Fish Tacos</p> 
-</div> 
-<div class="col-md-4"> 
-<h3><strong>ASIAN / MIDDLE EASTERN</strong></h3><p>Full Moon<br/>Uroko Cafe (Poke)<br/>Flame Broiler<br/>Pick Up Stix<br/>Halal Guys<br/>Tandoori Indian Cuisine<br/>Din Tai Fung (Dumplings)<br/>Hakata Ikkousha (Ramen)</p> 
-</div> 
-<div class="col-md-4"> 
-<h3><strong>SANDWICH / SOUP / SALAD</strong></h3><p>Green Leaf<br/>Souplantation<br/>Corner Bakery<br/>Panera<br/>Boudin<br/>La Petit Sourie<br/>Ruscello<br/>Bruegger's Bagels<br/>Subway</p> 
-</div> 
-<div class="col-md-4"> 
-<h3><strong>ITALIAN</strong></h3><p>Ecco Cafe<br/>Pitfire Pizza<br/>Maggianos<br/>Bella Cucina<br/>Pizza D'oro<br/>Pizza Press</p> 
-</div> 
-<div class="col-md-4"> 
-<h3><strong>AMERICAN</strong></h3><p>Red Robin<br/>Habit<br/>Burger Lounge<br/>In-n-out<br/>Chick Fil-A<br/>Five Guys<br/>Raising Canes<br/>Ruby's<br/>Wing Stop<br/>Philly's Best</p> 
-</div> 
-<div class="col-md-4"> 
-<h3><strong>VEGAN</strong></h3><p>Native Foods Cafe<br/>Seabirds Kitchen<br/>HiroNori Craft Ramen</p> 
-</div> 
-</div> 
-</div> 
-
-</div> 
-</div> 
-<!-- Our Event Sponsors End --> 
-
-<!-- Our Event Sponsors Start --> 
-<div class="our-event-sponsors2 sponsors-border-style gray-color pt-100 pb-100"> 
-<div class="container"> 
-<div class="sec-title3 text-center"> 
-<span>Attractions</span> 
-<h2>Places to Have Fun</h2> 
-</div> 
-<div class="sponsor-tabs-content"> 
-<div class="row"> 
-<div class="col-md-4"> 
-<h3><strong>THEME PARKS</strong></h3><p>Disneyland<br/>Knott's Berry Farm<br/>Adventure City</p> 
-</div> 
-<div class="col-md-4"> 
-<h3><strong>SHOPPING</strong></h3><p>South Coast Plaza<br/>Fashion Island<br/>The Outlets in Orange<br/>Irvine Spectrum</p> 
-</div> 
-<div class="col-md-4"> 
-<h3><strong>BEACHES</strong></h3><p>Newport Beach<br/>Huntington Beach Pier<br/>Laguna Beach<br/>Crystal Cove State Beach<br/>Corona del Mar State Beach</p> 
-</div> 
-</div> 
-</div> 
-
-</div> 
-</div> 
-<!-- Our Event Sponsors End --> 
-
-<!-- Our Event Sponsors Start --> 
-<!-- div class="our-event-sponsors2 sponsors-border-style pt-100 pb-100"> 
+    <!-- Our Event Sponsors Start -->
+    <!-- div class="our-event-sponsors2 sponsors-border-style pt-100 pb-100"> 
 <div class="container"> 
 <div class="sec-title3 text-center"> 
 <span> </span> 
@@ -201,94 +170,95 @@
 </div> 
 
 </div> 
-</div--> 
-<!-- Our Event Sponsors End --> 
+</div-->
+    <!-- Our Event Sponsors End -->
 
-<!-- Venues Section End --> 
+    <!-- Venues Section End -->
 
-<!-- Contact Start --> 
-<section id="rs-footer" class="rs-footer drak-color multi-footer"> 
-<div class="container"> 
-<div class="footer-content-box"> 
-<div class="footer-logo text-center"> 
-<a href="#"><img src="images/cgnLogo.png" alt="Footer Logo"></a> 
-</div> 
-<div class="row"> 
-<div class="col-md-4 col-sm-12"> 
-<div class="content-grid"> 
-<h4 class="title">Address</h4> 
-<p class="some-text">3800 S. Fairview St. <br> 
-Santa Ana, CA 92704</p> 
-</div> 
-</div> 
-<div class="col-md-4 col-sm-12"> 
-<div class="content-grid"> 
-<h4 class="title">Contacts</h4> 
-<a class="contact-link" href="tel:7149794422">(714) 979-4422</a> 
-<br> 
-<a class="contact-link" href="mailto:contact@calvarychapel.com?subject=CGN Conference Email">contact@calvarychapel.com</a> 
-</div> 
-</div> 
-<div class="col-md-4 col-sm-12"> 
-<div class="content-grid"> 
-<h4 class="title">CGN</h4> 
-<a class="contact-link" href="https://calvarychapel.com/forms/join-calvary-global-network" >Join CGN</a> 
-<br> 
-<a class="contact-link" href="https://cgn.calvarychapel.com/about/" >Learn More about CGN</a> 
-</div> 
-</div> 
-</div> 
-</div> 
-<div class="copyrigh text-center"> 
-<p>&copy; 2019 Calvary Chapel | CGN. All Rights Reserved.</p> 
-<div class="social-links"> 
-<ul> 
-<li><a href="https://twitter.com/cglobalnetwork" ><i class="fa fa-twitter"></i></a></li> 
+    <!-- Contact Start -->
+    <section id="rs-footer" class="rs-footer drak-color multi-footer">
+        <div class="container">
+            <div class="footer-content-box">
+                <div class="footer-logo text-center">
+                    <a href="#"><img src="images/cgnLogo.png" alt="Footer Logo"></a>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <div class="content-grid">
+                            <h4 class="title">Address</h4>
+                            <p class="some-text">3800 S. Fairview St. <br>
+                                Santa Ana, CA 92704</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="content-grid">
+                            <h4 class="title">Contacts</h4>
+                            <a class="contact-link" href="tel:7149794422">(714) 979-4422</a>
+                            <br>
+                            <a class="contact-link" href="mailto:contact@calvarychapel.com?subject=CGN Conference Email">contact@calvarychapel.com</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="content-grid">
+                            <h4 class="title">CGN</h4>
+                            <a class="contact-link" href="https://calvarychapel.com/forms/join-calvary-global-network">Join CGN</a>
+                            <br>
+                            <a class="contact-link" href="https://cgn.calvarychapel.com/about/">Learn More about CGN</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyrigh text-center">
+                <p>&copy; 2019 Calvary Chapel | CGN. All Rights Reserved.</p>
+                <div class="social-links">
+                    <ul>
+                        <li><a href="https://twitter.com/cglobalnetwork"><i class="fa fa-twitter"></i></a></li>
 
-<li><a href="https://www.instagram.com/calvaryglobalnetwork/" ><i class="fa fa-instagram"></i></a></li> 
+                        <li><a href="https://www.instagram.com/calvaryglobalnetwork/"><i class="fa fa-instagram"></i></a></li>
 
-<li><a href="https://cgn.calvarychapel.com/about/" ><i class="fa fa-link"></i></a></li> 
+                        <li><a href="https://cgn.calvarychapel.com/about/"><i class="fa fa-link"></i></a></li>
 
-<li><a href="https://vimeo.com/calvarychapel" ><i class="fa fa-vimeo"></i></a></li> 
+                        <li><a href="https://vimeo.com/calvarychapel"><i class="fa fa-vimeo"></i></a></li>
 
-<li><a href="https://www.facebook.com/calvaryglobalnetwork/" ><i class="fa fa-facebook"></i></a></li> 
-</ul> 
-</div> 
-</div> 
-</div> 
-</section> 
-<!-- Contact End --> 
+                        <li><a href="https://www.facebook.com/calvaryglobalnetwork/"><i class="fa fa-facebook"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact End -->
 
-<!-- start scrollUp --> 
-<div id="scrollUp"> 
-<i class="fa fa-angle-up"></i> 
-</div> 
+    <!-- start scrollUp -->
+    <div id="scrollUp">
+        <i class="fa fa-angle-up"></i>
+    </div>
 
-<!-- modernizr js --> 
-<script src="js/modernizr-2.8.3.min.js"></script> 
-<!-- jquery latest version --> 
-<script src="js/jquery.min.js"></script> 
-<!-- bootstrap js --> 
-<script src="js/bootstrap.min.js"></script> 
-<!-- owl.carousel js --> 
-<script src="js/owl.carousel.min.js"></script> 
-<!-- slick.min js --> 
-<script src="js/slick.min.js"></script> 
-<!-- imagesloaded.pkgd.min js --> 
-<script src="js/imagesloaded.pkgd.min.js"></script> 
-<!-- wow js --> 
-<script src="js/wow.min.js"></script> 
-<!-- magnific popup --> 
-<script src="js/jquery.magnific-popup.min.js"></script> 
-<!-- rsmenu js --> 
-<script src="js/rsmenu-main.js"></script> 
-<!-- plugins js --> 
-<script src="js/plugins.js"></script> 
-<!-- time-circle js --> 
-<script src="js/time-circle.js"></script> 
-<!-- moogle map js --> 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgC6ZapXdUzFdeQOFhdm_wucwlDMMQ8CQ"></script> 
-<!-- main js --> 
-<script src="js/main.js"></script> 
-</body> 
+    <!-- modernizr js -->
+    <script src="js/modernizr-2.8.3.min.js"></script>
+    <!-- jquery latest version -->
+    <script src="js/jquery.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- owl.carousel js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- slick.min js -->
+    <script src="js/slick.min.js"></script>
+    <!-- imagesloaded.pkgd.min js -->
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <!-- wow js -->
+    <script src="js/wow.min.js"></script>
+    <!-- magnific popup -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- rsmenu js -->
+    <script src="js/rsmenu-main.js"></script>
+    <!-- plugins js -->
+    <script src="js/plugins.js"></script>
+    <!-- time-circle js -->
+    <script src="js/time-circle.js"></script>
+    <!-- moogle map js -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgC6ZapXdUzFdeQOFhdm_wucwlDMMQ8CQ"></script>
+    <!-- main js -->
+    <script src="js/main.js"></script>
+</body>
+
 </html>
