@@ -2858,7 +2858,7 @@ button {
   height: 1px;
   width: 100px;
 }*/
-.rs-team .team-item .team-social.icons-2:after,
+/*.rs-team .team-item .team-social.icons-2:after,
 .rs-team .team-item .team-social.icons-2:before {
   content: '';
   position: absolute;
@@ -2877,7 +2877,7 @@ button {
   right: 10px;
   height: 1px;
   width: 100px;
-}
+}*/
 .rs-team .team-item .team-social li {
   display: inline-block;
   position: relative;
